@@ -1,0 +1,160 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slide panel 1</title>
+<link href='http://fonts.googleapis.com/css?family=Rosario' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="mobile-site-custom-jqm-defaults.js"></script>
+
+<script type="text/javascript">
+$(document).on('pageinit',function(){
+                $('div[data-role="content"]').on("swiperight",function(){
+                    //console.log('swipe');
+                    $.mobile.activePage.find('#myPanel').panel("open");
+                });
+
+            });  
+</script>
+
+<style type="text/css">
+.ui-body-b{font-family: 'Rosario', sans-serif;}
+
+*{font-family: 'Rosario', sans-serif;}
+
+.ui-btn-up-b{border: none; border-radius: 2px; margin-top: 30px; cursor: pointer;}
+/*
+.ui-btn:hover{border: none; border-radius: 2px; cursor: pointer; }
+
+.ui-btn-up:hover{border: none; border-radius: 2px; cursor: pointer; }
+*/
+
+.ui-header{background-image: url('images/header.jpg'); height: 100px;}
+
+.ui-header .ui-title{font-size: 16px; margin-top: 24px;}
+
+.ui-btn-up-b{font-weight:700;color:#fff;text-shadow:0 1px 0 #194b7e;}
+.ui-btn-up-b:visited,.ui-btn-up-b a.ui-link-inherit{background: none; background-image: none; border: none; }
+.ui-btn-hover-b{background: none; background-image: none;  border-radius: 2px; border: none; }
+.ui-btn-hover-b:visited,.ui-btn-hover-b:hover,.ui-btn-hover-b a.ui-link-inherit{background: none; background-image: none; border: none; }
+.ui-btn-down-b{background: none; background-image: none; border: none;}
+.ui-btn-down-b:visited,.ui-btn-down-b:hover,.ui-btn-down-b a.ui-link-inherit{background: none; border: none; }
+.ui-btn-up-b,.ui-btn-hover-b,.ui-btn-down-b{background: none; background-image: none; border: none; }
+
+
+ul li.current{background-color: #7ec006; }
+
+ul li.current a{color: #161718;}
+
+.ui-btn-text a{color:red;}
+
+.ui-listview .ui-li:hover{background-color: #acdd54;}
+
+.ui-listview .ui-li:active{background-color: #acdd54;}
+
+
+img.fullscreen{width: 100%; height: auto; margin-bottom: 20px;}
+
+.mainContent{zoom: 1; 
+	position: relative; 
+	max-width:960px;
+	margin:0 auto;
+	z-index:100;
+	border:none;
+	text-align:left; /* reset align=center */
+	padding: 2px;
+	margin-top: -20px;
+
+}
+
+
+</style>
+	</head>
+
+	<body>
+ 
+
+
+<div data-role="page" data-theme="b">
+
+	<div data-role="header" data-theme="b">
+		<a href="#myPanel"  style="position:absolute; top:20px;"><img src="images/icon_menu.png" style="width:30px; height:30px;" /></a>
+		<h1>About</h1>
+		<center><span style="font-size:10px; color:#b5df6c;">HITLAR KUMAR RAJBHANDARI</span></center>
+	</div><!-- /header -->
+
+ 
+
+
+	<div data-role="panel" id="myPanel" data-theme="a" class="ui-response">
+		
+<img src="images/mypic.jpg" class="fullscreen"/>
+		<ul data-role="listview" data-icon="false">
+			<li><a href="index.html">Home</a></li>
+			<li class="current"><a href="#">About</a></li>
+			<li><a href="work.html">Work</a></li>
+			
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+
+	<p style="font-size:12px; color:#4e4e4e; margin-top:40px;"><img src="images/logo3.png" class="fullscreen"/>Copyright &copy; 2013 hitlar rajbandari</p>
+	</div><!--myPanel-->
+
+	
+
+
+	
+
+
+<div data-role="content">
+
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="home-slide/sld1.jpg" alt="slide1" title="" id="wows1_1"/> </li>
+
+</ul></div>	
+<div class="shadow"><img src="images/shadow.png" class="fullscreen"/></div>
+</div>
+
+<div class="mainContent">
+<p>
+<h3 style="color:#7fc107;">SKILLS</h3>
+
+<ol>
+	<li>HTML, 
+		<li>CSS</li>
+		<li> PHOTOSHOP</li>
+		<li> PHP/MYSQL,</li>
+		<li> JQUERY / AJAX</li>
+	</ol>
+	<br/>Basic knowledge in WORDPRESS, INDESIGN, WORD, EXCEL<br/><br/>
+	Code Editors:<br/>
+	Dreamweaver, Notepad ++, SublimeText2
+
+<h3 style="color:#7fc107;">EDUCATION</h3>
+
+Completed Year: 2011<br/>
+Level: Master (Msc in Computing and Information System)<br/>
+Institution: University of Greenwich<br/>
+Address: 30 Park Row, Greenwich SE10 9LS<br/>
+<span style="font-size:13px;"><em>(Project: A small Library Management System)</em></span>
+
+</p>
+</div>
+
+
+</div>
+
+
+</div><!--page ends-->
+   
+  
+  </head>
+	</body>
+	</html>
